@@ -1,0 +1,36 @@
+<h3>Show People</h3>
+
+<div class="table-responsive">
+    <table class="table table-hover table-striped table-bordered">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Phone</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+
+        <tfoot>
+        <tr>
+            <th colspan="4"></th>
+            <th>Count: {{ people.length }}</th>
+        </tr>
+        </tfoot>
+
+        <tbody>
+        <tr ng-repeat="person in people" data-id="{{ person.id }}">
+            <td>{{ person.data.name }}</td>
+            <td>{{ person.data.email }}</td>
+            <td>{{ person.data.address }}</td>
+            <td>{{ person.data.phone }}</td>
+            <td>
+                <a ui-sref="person({id: person.data._id})" class="btn btn-primary btn-block">View Details</a>
+            </td>
+        </tr>
+        </tbody>
+
+    </table>
+
+</div>

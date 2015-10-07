@@ -1,0 +1,10 @@
+{
+  "browser": {
+
+    "jquery": "./vendor/jquery-1.11.3.min.js",
+    "bootstrap": "./vendor/bootstrap.min.js",
+
+    "angular": "./vendor/angular-index.js",
+    "angular-ui-router": "./vendor/angular-ui-router.min.js"
+  }
+}

@@ -1,0 +1,45 @@
+<div class="person" ng-repeat="person in people"
+     data-person-id="{{ person.data._id }}" data-guid="{{ person.data.guid }}">
+
+    <h3>{{ person.data.name }}</h3>
+    <div class="row">
+
+        <div class="col-sm-3">
+            <img ng-src="{{ person.data.picture }}" alt="Thumbnail" width="32" height="32">
+            <div>{{ person.data.address }}</div>
+        </div>
+
+
+
+        <div class="col-sm-6">
+            <div>{{ person.data.about }}</div>
+        </div>
+
+
+
+        <div class="col-sm-3">
+            <dl>
+                <dt>Age</dt>
+                <dd>{{ person.data.age }}</dd>
+
+                <dt>Eye Color</dt>
+                <dd>{{ person.data.eyeColor }}</dd>
+
+                <dt>Gender</dt>
+                <dd>{{ person.data.gender }}</dd>
+
+                <dt>Company</dt>
+                <dd>{{ person.data.company }}</dd>
+
+                <dt>Email</dt>
+                <dd>{{ person.data.email }}</dd>
+
+                <dt>Phone</dt>
+                <dd>{{ person.data.phone }}</dd>
+
+                <dt>Favorite Fruit</dt>
+                <dd>{{ person.data.favoriteFruit }}</dd>
+            </dl>
+        </div>
+    </div>
+</div>
